@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QrGeneratorFragment">
+
+    <ImageView
+        android:id="@+id/img_generated_qr"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:contentDescription="@string/qr_code"/>
+    
+    <EditText
+        android:id="@+id/edit_text_qr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_generated_qr"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_margin="20dp"
+        android:autofillHints=""
+        android:hint="@string/enter_qr_info"
+        android:inputType="text"/>
+
+    <Button
+        android:id="@+id/btn_generate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_text_qr"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:text="@string/generate_qr"/>
+
+</RelativeLayout>
