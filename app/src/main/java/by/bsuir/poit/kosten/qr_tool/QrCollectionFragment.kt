@@ -45,7 +45,10 @@ class QrCollectionFragment : Fragment() {
         }
 
         override fun createFragment(position: Int): Fragment {
-            return QrGeneratorFragment.newInstance()
+            return if(position == 0)
+                QrGeneratorFragment.newInstance()
+            else
+                QrScanFragment.newInstance()
         }
 
     }
