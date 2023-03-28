@@ -16,6 +16,7 @@ import android.webkit.URLUtil
 import android.widget.Button
 import android.widget.RelativeLayout
 import android.widget.TextView
+import android.widget.Toast
 import com.budiyev.android.codescanner.AutoFocusMode
 import com.budiyev.android.codescanner.CodeScanner
 import com.budiyev.android.codescanner.CodeScannerView
@@ -113,6 +114,7 @@ class QrScanFragment : Fragment() {
             val clipboard = requireActivity().getSystemService(Context.CLIPBOARD_SERVICE) as ClipboardManager
             val clip = ClipData.newPlainText(viewModel.qrText, viewModel.qrText)
             clipboard.setPrimaryClip(clip)
+            Toast.makeText(requireContext(), R.string.qr_copied, Toast.LENGTH_SHORT).show()
         }
 
         qrGoLinkButton.setOnClickListener {

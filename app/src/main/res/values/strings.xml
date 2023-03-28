@@ -4,7 +4,10 @@
     <string name="qr_code">Qr code</string>
     <string name="enter_qr_info">Enter Qr info</string>
     <string name="generate_qr">Generate Qr</string>
+    <string name="save_qr">Save Qr</string>
+    <string name="share_qr">Share Qr</string>
     <string name="scan_qr">Scan qr</string>
     <string name="copy_qr">Copy</string>
     <string name="go_link_qr">Go to link</string>
+    <string name="qr_copied">Copied</string>
 </resources>
